@@ -57,15 +57,15 @@ Exits `0` on success.
 
 GitHub Actions cron at `03:00 UTC` — [.github/workflows/daily-sync.yml](.github/workflows/daily-sync.yml). Add `GEMINI_API_KEY` to repo secrets. State is cached between runs and uploaded as an artifact.
 
-**Latest run logs:** `https://github.com/<user>/kb-sync/actions/workflows/daily-sync.yml`
+**Latest run logs:** `https://github.com/NguyenThu301200/kb-sync/actions/runs/36247941934`
 
 ## First run
 
 ```
-added=35 updated=0 refreshed=0 skipped=0 total_tracked=35
+added=414 updated=0 refreshed=0 skipped=0 total_tracked=414
 ```
 
-Second run (within 40h, nothing changed): `added=0 updated=0 refreshed=0 skipped=35` — delta confirmed.
+Second run (within 40h, nothing changed): `added=0 updated=0 refreshed=0 skipped=414` — delta confirmed.
 
 ## Screenshot
 
