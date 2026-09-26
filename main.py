@@ -89,7 +89,9 @@ def main() -> int:
             refreshed += 1
             log.info("REFRESHED %s (%s) -> %s", aid, article["html_url"], file_name)
 
-    state.save(STATE_FILE, st)
+        # Save after each upload so a mid-run failure doesn't lose progress.
+        state.save(STATE_FILE, st)
+
     log.info("Done. added=%d updated=%d refreshed=%d skipped=%d total_tracked=%d",
              added, updated, refreshed, skipped, len(st["articles"]))
     return 0

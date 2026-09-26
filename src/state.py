@@ -14,7 +14,7 @@ def article_hash(article: dict) -> str:
 def load(path: Path) -> dict:
     if path.exists():
         return json.loads(path.read_text())
-    return {"vector_store_id": None, "articles": {}}
+    return {"articles": {}}
 
 
 def save(path: Path, state: dict) -> None:
